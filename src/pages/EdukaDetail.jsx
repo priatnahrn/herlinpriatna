@@ -111,7 +111,7 @@ const EdukaStudyCase = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/src/assets/logo-eduka.png" alt="Logo Eduka" />
+              <img src="/assets/logo-eduka.png" alt="Logo Eduka" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl mt-4 font-bold text-gray-900 mb-6">
                 Eduka <span className="text-violet-500">App</span>
               </h1>
@@ -131,12 +131,11 @@ const EdukaStudyCase = () => {
                   Project Competition
                 </span>
               </div>
-             
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-violet text-violet-500/5 to-violet-100 rounded-3xl blur-3xl"></div>
               <img
-                src="/src/assets/eduka-3.png"
+                src="/assets/eduka-3.png"
                 alt="Eduka App Preview"
                 className="relative w-full"
               />
@@ -227,7 +226,6 @@ const EdukaStudyCase = () => {
 
       <DesignProcessGallery />
 
-      
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { QrCode, TestTube, ClipboardCheck, BarChart3 } from "lucide-react";
 

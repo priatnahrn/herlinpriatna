@@ -120,7 +120,7 @@ const KasihIbuStudyCase = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/src/assets/kasihibu/kasih-ibu-logo.png"
+                src="/assets/kasihibu/kasih-ibu-logo.png"
                 alt="Logo Kasih Ibu"
               />
               <h1 className="text-4xl md:text-5xl lg:text-6xl mt-4 font-bold text-gray-900 mb-6">
@@ -145,7 +145,7 @@ const KasihIbuStudyCase = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-rose-500/5 to-rose-100 rounded-3xl blur-3xl"></div>
               <img
-                src="/src/assets/kasihibu/mockup.png"
+                src="/assets/kasihibu/mockup.png"
                 alt="Kasih Ibu App Preview"
                 className="relative w-full"
               />
@@ -552,7 +552,7 @@ const KasihIbuStudyCase = () => {
 
           <div className="w-full flex justify-center">
             <img
-              src="/src/assets/kasihibu/analisis-kompetitor.png"
+              src="/assets/kasihibu/analisis-kompetitor.png"
               alt="Analisis Kompetitor"
               className="lg:w-[80%]"
             />
@@ -646,7 +646,7 @@ const KasihIbuStudyCase = () => {
               most impactful issues.
             </p>
             <img
-              src="/src/assets/kasihibu/pain-gain.png"
+              src="/assets/kasihibu/pain-gain.png"
               alt="Pain & Gain Definition"
               className="rounded-xl shadow-md"
             />
@@ -663,7 +663,7 @@ const KasihIbuStudyCase = () => {
               process.
             </p>
             <img
-              src="/src/assets/kasihibu/pain-categorization.png"
+              src="/assets/kasihibu/pain-categorization.png"
               alt="Pain Categorization"
               className="rounded-xl shadow-md"
             />
@@ -680,7 +680,7 @@ const KasihIbuStudyCase = () => {
               feasibility.
             </p>
             <img
-              src="/src/assets/kasihibu/pain-prioritization.png"
+              src="/assets/kasihibu/pain-prioritization.png"
               alt="Pain Prioritization"
               className="rounded-xl shadow-md"
             />

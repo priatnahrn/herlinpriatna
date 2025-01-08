@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   History,
@@ -52,7 +53,7 @@ const IterationResults = () => {
                     To-do Integration
                   </h5>
                   <p className="text-sm text-gray-600">
-                    Implemented direct addition of AI recommendations to user's
+                    Implemented direct addition of AI recommendations to users
                     to-do list
                   </p>
                 </div>
