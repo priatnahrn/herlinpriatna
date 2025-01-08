@@ -67,43 +67,43 @@ const DesignProcessGallery = () => {
     {
       title: "Empathy Map",
       description: "Understanding user needs and pain points",
-      image: "/src/assets/kasihibu/empathy-map.png",
+      image: "/assets/kasihibu/empathy-map.png",
       type: "Empathy Map",
     },
     {
       title: "Information Architecture",
       description: "Detailed information architecture and navigation design",
-      image: "/src/assets/kasihibu/ia.png",
+      image: "/assets/kasihibu/ia.png",
       type: "Information Architecture",
     },
     {
       title: "User Persona",
       description: "Detailed user persona and needs analysis",
-      image: "/src/assets/kasihibu/user-persona.png",
+      image: "/assets/kasihibu/user-persona.png",
       type: "Information Architecture",
     },
     {
       title: "Wireframes",
       description: "Initial layout and structure planning",
-      image: "/src/assets/kasihibu/wireframes.jpg",
+      image: "/assets/kasihibu/wireframes.jpg",
       type: "Low-fidelity",
     },
     {
       title: "Design System Guidelines",
       description: "Consistent design elements and components",
-      image: "/src/assets/kasihibu/design-system.jpg",
+      image: "/assets/kasihibu/design-system.jpg",
       type: "Design System",
     },
     {
       title: "Visual Design",
       description: "Detailed interface and component design",
-      image: "/src/assets/kasihibu/high-fidelity.png",
+      image: "/assets/kasihibu/high-fidelity.png",
       type: "High-fidelity",
     },
     {
       title: "Final Prototype",
       description: "Interactive prototype for testing",
-      image: "/src/assets/kasihibu/prototype.jpg",
+      image: "/assets/kasihibu/prototype.jpg",
       type: "Interactive",
     },
   ];
@@ -111,12 +111,12 @@ const DesignProcessGallery = () => {
   const projectGallery = [
     {
       title: "Presentation",
-      image: "/src/assets/yayasanmaqdis.jpg",
+      image: "/assets/yayasanmaqdis.jpg",
       category: "Final Presentation",
     },
     {
       title: "Mockup",
-      image: "/src/assets/kasihibu/high-fidelity.png",
+      image: "/assets/kasihibu/high-fidelity.png",
       category: "Mockup",
     },
   ];

@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${
-            isOpen ? "opacity-100 h-72" : "opacity-0 h-0"
+            isOpen ? "opacity-100 h-100" : "opacity-0 h-0"
           } overflow-hidden`}
         >
           <ul className="pt-2 pb-4 space-y-3">

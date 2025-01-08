@@ -67,37 +67,37 @@ const DesignProcessGallery = () => {
       {
         title: "User Persona",
         description: "Detailed about User Persona to understand user needs and preferences",
-        image: "/src/assets/eduka/user-persona.png",
+        image: "/assets/eduka/user-persona.png",
         type: "User Persona",
       },
     {
       title: "Information Architecture",
       description: "Detailed information architecture and navigation design",
-      image: "/src/assets/eduka/information-architecture.png",
+      image: "/assets/eduka/information-architecture.png",
       type: "Information Architecture",
     },
     {
       title: "Wireframes",
       description: "Initial layout and structure planning",
-      image: "/src/assets/eduka/wireframe.png",
+      image: "/assets/eduka/wireframe.png",
       type: "Low-fidelity",
     },
     {
       title: "Style Guide Design",
       description: "Detailed style guide and component design",
-      image: "/src/assets/eduka/style-guide.png",
+      image: "/assets/eduka/style-guide.png",
       type: "Guidelines",
     },
     {
       title: "Visual Design",
       description: "Detailed interface and component design",
-      image: "/src/assets/eduka/all-eduka.png",
+      image: "/assets/eduka/all-eduka.png",
       type: "High-fidelity",
     },
     {
       title: "Final Prototype",
       description: "Interactive prototype for testing",
-      image: "/src/assets/eduka/prototype-process.png",
+      image: "/assets/eduka/prototype-process.png",
       type: "Interactive",
     },
   ];
@@ -105,12 +105,12 @@ const DesignProcessGallery = () => {
   const projectGallery = [
     {
       title: "Award",
-      image: "/src/assets/eduka/award.jpg",
+      image: "/assets/eduka/award.jpg",
       category: "Awards",
     },
     {
        title: "Mockup",
-       image : "/src/assets/eduka/eduka-preview.png",
+       image : "/assets/eduka/eduka-preview.png",
        category: "Mockup", 
     }
   ];
