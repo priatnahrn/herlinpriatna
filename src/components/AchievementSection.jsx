@@ -11,14 +11,14 @@ const AchievementSection = () => {
           title: "2nd Winner National UI/UX Design Competition at UMY",
           description:
             "Recognized for designing an innovative and user-friendly mobile application prototype tailored to the competition's theme.",
-          icon: "public/assets/logo-UMY.png",
+          icon: "/assets/logo-UMY.png",
         },
         {
           title:
             "1st Winner National UI/UX Design Competition at Primakara University",
           description:
             "Developed a cutting-edge user experience solution, earning the top spot in a highly competitive national event.",
-          icon: "public/assets/primakara_logo.png",
+          icon: "/assets/primakara_logo.png",
         },
         {
           title:
