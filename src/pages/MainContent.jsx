@@ -134,7 +134,7 @@ const MainContent = () => {
             <div className="relative">
               <div className="w-full h-full absolute -inset-2 bg-gradient-to-r  rounded-3xl blur-2xl" />
               <img
-                src="src/assets/profile-photo.png"
+                src="public/assets/profile-photo.png"
                 alt="Herlin Priatna"
                 className="relative w-full h-auto  transform hover:scale-[1.02] transition-transform duration-300"
               />
@@ -178,9 +178,9 @@ const MainContent = () => {
                   </>
                 ),
                 gallery: [
-                  "/src/assets/maqdis.jpg",
-                  "/src/assets/fullteam.jpg",
-                  "/src/assets/predikat-maqdis.png",
+                  "/public/assets/maqdis.jpg",
+                  "/public/assets/fullteam.jpg",
+                  "/public/assets/predikat-maqdis.png",
                 ],
               },
 
@@ -191,9 +191,9 @@ const MainContent = () => {
                 description:
                   "Collaborated and contributed to the creation of UI designs for the Kawan Kerja ERP system within a 2-month period. Focused on improving user experience by streamlining interfaces and optimizing the workflow for better functionality. Later, worked on the GadgetIndo project, which provided users with easy access to comprehensive information about cutting-edge gadget technology, significantly enhancing the platform's usability and design appeal.",
                 gallery: [
-                  "/src/assets/kawankerjafullteam.jpg",
-                  "/src/assets/erp.png",
-                  "/src/assets/kawankerja.png",
+                  "/public/assets/kawankerjafullteam.jpg",
+                  "/public/assets/erp.png",
+                  "/public/assets/kawankerja.png",
                 ],
               },
               {
@@ -202,7 +202,7 @@ const MainContent = () => {
                 company: "BBGP Kemendikbudristek",
                 description:
                   "Worked as part of a team to design the BBGP West Java Province Library website, aimed at improving access to educational resources and services. Contributed to crafting an intuitive, user-friendly interface that enhances the digital experience for both students and educators, ensuring easy navigation and seamless functionality. The project achieved great success in boosting the platform's user engagement and accessibility.",
-                gallery: ["/src/assets/bbgp-1.jpeg", "/src/assets/bbgp-2.jpg"],
+                gallery: ["/public/assets/bbgp-1.jpeg", "/public/assets/bbgp-2.jpg"],
               },
             ].map((item, index) => (
               <div key={index} className="relative pl-8 pb-12 group">
@@ -251,32 +251,32 @@ const MainContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                image: "src/assets/eduka-2.png",
+                image: "public/assets/eduka-2.png",
                 name: "Eduka App",
                 link: "https://dribbble.com/shots/24383614-Eduka-App-Augmented-Reality-for-Engaging-Elementary-Education?utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=Eduka%20App%3A%20Augmented%20Reality%20for%20Engaging%20Elementary%20Education&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=Eduka%20App%3A%20Augmented%20Reality%20for%20Engaging%20Elementary%20Education&utm_medium=Social_Share",
               },
               {
-                image: "src/assets/unggastek.png",
+                image: "public/assets/unggastek.png",
                 name: "UnggasTek App",
                 link: "https://dribbble.com/shots/24481867-UnggasTech-All-in-1-App-for-Efficient-Chicken-Farm-Management?utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=UnggasTech%20-%20All%20in%201%20App%20for%20Efficient%20Chicken%20Farm%20Management&utm_medium=Social_Share",
               },
               {
-                image: "src/assets/mangan.png",
+                image: "public/assets/mangan.png",
                 name: "Mangan App",
                 link: "https://dribbble.com/shots/24482088-Mangan-Online-Food-Delivery-App?utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=Mangan%20%3A%20Online%20Food%20Delivery%20App&utm_medium=Social_Share",
               },
               {
-                image: "src/assets/kasihibu.png",
+                image: "public/assets/kasihibu.png",
                 name: "Kasih Ibu App",
                 link: "https://dribbble.com/shots/24482088-Mangan-Online-Food-Delivery-App?utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=Mangan%20%3A%20Online%20Food%20Delivery%20App&utm_medium=Social_Share",
               },
               {
-                image: "src/assets/geegi.png",
+                image: "public/assets/geegi.png",
                 name: "Geegi : Landing Page Dental Health Care ",
                 link: "https://dribbble.com/shots/24482088-Mangan-Online-Food-Delivery-App?utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=Mangan%20%3A%20Online%20Food%20Delivery%20App&utm_medium=Social_Share",
               },
               {
-                image: "src/assets/architech.png",
+                image: "public/assets/architech.png",
                 name: "Architech : Web for Architectural Services",
                 link: "https://dribbble.com/shots/24482088-Mangan-Online-Food-Delivery-App?utm_source=Clipboard_Shot&utm_campaign=priatnahrn__&utm_content=Mangan%20%3A%20Online%20Food%20Delivery%20App&utm_medium=Social_Share",
               },

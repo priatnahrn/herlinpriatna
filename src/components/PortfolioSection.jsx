@@ -22,7 +22,7 @@ const PortfolioSection = () => {
         { name: "AR Technology", color: "bg-green-100 text-green-600" },
         { name: "Education", color: "bg-yellow-100 text-yellow-600" },
       ],
-      image: "src/assets/eduka-app.png",
+      image: "public/assets/eduka-app.png",
       description:
         "An innovative AR-based learning platform designed to boost elementary students motivation and combat learning fatigue through interactive experiences.",
       likes: 128,
@@ -42,7 +42,7 @@ const PortfolioSection = () => {
         { name: "Healthcare", color: "bg-pink-100 text-pink-600" },
         { name: "AI Integration", color: "bg-yellow-100 text-yellow-600" },
       ],
-      image: "src/assets/kasih-ibu-mockup.png",
+      image: "public/assets/kasih-ibu-mockup.png",
       description:
         "A mobile app using AI to support pregnant and postpartum mothers in managing their mental health and emotional well-being.",
       likes: 95,
@@ -62,7 +62,7 @@ const PortfolioSection = () => {
         { name: "Education", color: "bg-yellow-100 text-yellow-600" },
         { name: "E-Learning", color: "bg-green-100 text-green-600" },
       ],
-      image: "src/assets/maqdis.png",
+      image: "public/assets/maqdis.png",
       description:
         "Maqdis Academy is a platform that provides access to project-based learning and internships for students to improve their skills in technology.",
       likes: 156,
@@ -81,7 +81,7 @@ const PortfolioSection = () => {
         { name: "Healthcare", color: "bg-pink-100 text-pink-600" },
         { name: "AI Integration", color: "bg-yellow-100 text-yellow-600" },
       ],
-      image: "src/assets/fitwell/fitwell-cover.png",
+      image: "public/assets/fitwell/fitwell-cover.png",
       description:
         "FitWell is a nutrition-focused app powered by AI that offers personalized meal plans, nutritionist consultations, and a product scanner to help users prevent and manage obesity.",
       likes: 95,
@@ -100,7 +100,7 @@ const PortfolioSection = () => {
         { name: "Education", color: "bg-yellow-100 text-yellow-600" },
         { name: "Islamic App", color: "bg-green-100 text-green-600" },
       ],
-      image: "src/assets/hamim/hamim-cover.png",
+      image: "public/assets/hamim/hamim-cover.png",
       description:
         "A mobile application for learning and memorizing the Quran using the Maqdis method, which provides excellent features in tracking audio-based memorization that is affordable and easily accessible.",
       likes: 95,
@@ -121,7 +121,7 @@ const PortfolioSection = () => {
       ],
       description:
         "ERP Kawan Kerja is an integrated application designed to optimize business operations by streamlining processes such as finance, HR, inventory, and project management, providing businesses with efficient and data-driven solutions.",
-      image: "src/assets/kawankerja/erp-cover.png",
+      image: "public/assets/kawankerja/erp-cover.png",
       likes: 95,
       views: 1220,
       featured: true,
@@ -140,7 +140,7 @@ const PortfolioSection = () => {
       ],
       description:
         "A platform tailored for halal and religious travel, enabling administrators to manage travel content, user interactions, and bookings efficiently while ensuring a seamless and spiritually enriching experience for travelers.",
-      image: "src/assets/maqdis/travel-cover.png",
+      image: "public/assets/maqdis/travel-cover.png",
       likes: 95,
       views: 1220,
       featured: true,
@@ -157,7 +157,7 @@ const PortfolioSection = () => {
         { name: "Game", color: "bg-orange-100 text-orange-600" },
         { name: "Islamic App", color: "bg-green-100 text-green-600" },
       ],
-      image: "src/assets/maqdis/hamim-game-cover.png",
+      image: "public/assets/maqdis/hamim-game-cover.png",
       description:
         "A mobile game-based application designed for learning and memorizing the Quran using the Maqdis method, featuring interactive audio-tracking tools for efficient memorization, accessible anytime, and affordable for all users.",
       likes: 95,
