@@ -81,13 +81,13 @@ const AchievementSection = () => {
             "2nd Winner National StartUp Innovation Contest University of Indonesia",
           description:
             "Showcased a disruptive startup idea, earning runner-up in a prestigious innovation competition.",
-          icon: "public/assets/ui-logo.png",
+          icon: "/assets/ui-logo.png",
         },
         {
           title: "3rd Runner Up Hackathon Sharia Economic LIPIA Jakarta",
           description:
             "Delivered a creative and impactful solution aligning with the principles of sharia economics.",
-          icon: "public/assets/lipia.png",
+          icon: "/assets/lipia.png",
         },
       ],
     },
