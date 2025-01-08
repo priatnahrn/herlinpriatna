@@ -134,7 +134,7 @@ const MainContent = () => {
             <div className="relative">
               <div className="w-full h-full absolute -inset-2 bg-gradient-to-r  rounded-3xl blur-2xl" />
               <img
-                src="assets/profile-photo.png"
+                src="/assets/profile-photo.png"
                 alt="Herlin Priatna"
                 className="relative w-full h-auto  transform hover:scale-[1.02] transition-transform duration-300"
               />
