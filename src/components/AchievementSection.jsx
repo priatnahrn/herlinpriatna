@@ -25,20 +25,20 @@ const AchievementSection = () => {
             "Best Top 7 National Business Challenge Astranauts by PT Astra International Tbk",
           description:
             "Achieved distinction by presenting a scalable business solution addressing contemporary challenges.",
-          icon: "public/assets/astra.png",
+          icon: "/assets/astra.png",
         },
         {
           title: "Project Funding PKM Penerapan IPTEK by PKM Kemendikbud RI",
           description:
             "Secured funding for implementing a technology-based project aimed at community empowerment.",
-          icon: "public/assets/kemendikbud.png",
+          icon: "/assets/kemendikbud.png",
         },
         {
           title:
             "Project Funding Innovillage Bidang Disabilitas by PT Telkom Indonesia",
           description:
             "Awarded funding for a disability-focused innovation to improve accessibility and inclusion.",
-          icon: "public/assets/telkom_logo.png",
+          icon: "/assets/telkom_logo.png",
         },
       ],
     },
@@ -50,26 +50,26 @@ const AchievementSection = () => {
             "1st Winner National Business Plan Competition BEM FKB Telkom University",
           description:
             "Developed a comprehensive business plan addressing real-world challenges, securing first place.",
-          icon: "public/assets/logo-telkom-univ.png",
+          icon: "/assets/logo-telkom-univ.png",
         },
         {
           title:
             "1st Winner National Business Plan Competition History Fair University of Jambi",
           description:
             "Crafted a strategic and impactful business proposal, earning the top spot in the competition.",
-          icon: "public/assets/unjam.jpg",
+          icon: "/assets/unjam.jpg",
         },
         {
           title: "Best Team Project at Dinotis 2023",
           description:
             "Recognized for outstanding collaboration and execution in a multidisciplinary project.",
-          icon: "public/assets/dinotis_logo.jpeg",
+          icon: "/assets/dinotis_logo.jpeg",
         },
         {
           title: "3rd Winner Motion Hackathon Telkom University 2023",
           description:
             "Developed a creative and functional hackathon project, securing a podium finish.",
-          icon: "public/assets/motion-lab.jpeg",
+          icon: "/assets/motion-lab.jpeg",
         },
       ],
     },
