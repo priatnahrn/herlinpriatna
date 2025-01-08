@@ -217,7 +217,7 @@ const AboutSection = () => {
             <div className="relative">
               <div className="absolute " />
               <img
-                src="public/assets/about-2.png"
+                src="/assets/about-2.png"
                 alt="About Herlin"
                 className="relative w-full h-auto "
               />
