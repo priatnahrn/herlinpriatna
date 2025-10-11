@@ -164,9 +164,41 @@ const MainContent = () => {
           <div className="max-w-4xl mx-auto">
             {[
               {
-                year: "Oct - Dec 2024",
+                
+                title: "Coming Soon...",
+                
+              },
+              {
+                year: "Mar – Sep 2025",
+                title: "UI/UX Designer Intern",
+                company: "PT Bank SMBC Indonesia Tbk",
+                location: "South Jakarta, Indonesia (Hybrid)",
+                description: (
+                  <>
+                    Completed over 10 sprint cycles within an Agile Scrum
+                    framework, actively contributing to sprint activities and
+                    cross-functional discussions to ensure timely and
+                    high-quality design outcomes. Served as the team’s PIC,
+                    coordinating with Product Owners and Business Stakeholders
+                    to align design goals and requirements. Designed and refined
+                    key features for the TOUCHBIZ business banking app —
+                    including KYC Video Call, Rebranding, Enhanced Security
+                    Features, and New Product Handling — while collaborating
+                    with a 5+ member UI/UX team through brainstorming sessions,
+                    peer reviews, and workshops to enhance overall usability and
+                    user experience.
+                  </>
+                ),
+                gallery: [
+                  "/assets/touchbiz/smbc-office.jpg",
+                  "/assets/touchbiz/reward.jpg",
+                ],
+              },
+              {
+                year: "Oct 2024 - Jan 2024",
                 title: "UI Designer Internship",
                 company: "Yayasan Maqdis",
+                location: "Bandung, Indonesia (Hybrid)",
                 description: (
                   <>
                     Designed 4 projects for Maqdis Foundation, including Maqdis
@@ -183,11 +215,11 @@ const MainContent = () => {
                   "/assets/predikat-maqdis.png",
                 ],
               },
-
               {
                 year: "Jul - Oct 2024",
                 title: "UI/UX Designer Internship",
                 company: "Kawan Kerja",
+                location: "Bandung, Indonesia (Remote)",
                 description:
                   "Collaborated and contributed to the creation of UI designs for the Kawan Kerja ERP system within a 2-month period. Focused on improving user experience by streamlining interfaces and optimizing the workflow for better functionality. Later, worked on the GadgetIndo project, which provided users with easy access to comprehensive information about cutting-edge gadget technology, significantly enhancing the platform's usability and design appeal.",
                 gallery: [
@@ -200,6 +232,7 @@ const MainContent = () => {
                 year: "Jul - Aug 2024",
                 title: "UI Designer Internship",
                 company: "BBGP Kemendikbudristek",
+                location: "Bandung, Indonesia (Onsite)",
                 description:
                   "Worked as part of a team to design the BBGP West Java Province Library website, aimed at improving access to educational resources and services. Contributed to crafting an intuitive, user-friendly interface that enhances the digital experience for both students and educators, ensuring easy navigation and seamless functionality. The project achieved great success in boosting the platform's user engagement and accessibility.",
                 gallery: ["/assets/bbgp-1.jpeg", "/assets/bbgp-2.jpg"],
@@ -208,17 +241,22 @@ const MainContent = () => {
               <div key={index} className="relative pl-8 pb-12 group">
                 <div className="absolute left-0 top-0 h-full w-0.5 bg-gray-200 group-hover:bg-[#EB3748] transition-colors duration-300" />
                 <div className="absolute left-[-4px] top-2 h-3 w-3 rounded-full bg-[#EB3748]" />
-                <div className="text-sm font-medium text-[#EB3748] mb-2">
+                <div className="text-sm font-medium text-[#EB3748] mb-1">
                   {item.year}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">
                   {item.title}
                 </h3>
-                <div className="text-gray-600 font-medium mb-2">
+                <div className="text-gray-600 font-medium mb-1">
                   {item.company}
                 </div>
+                {item.location && (
+                  <div className="text-gray-500 text-sm mb-2">
+                    {item.location}
+                  </div>
+                )}
                 <p className="text-gray-600">{item.description}</p>
-                {/* Galeri */}
+                {/* Gallery */}
                 <div className="flex gap-4 flex-wrap mt-6">
                   {Array.isArray(item.gallery) &&
                     item.gallery.map((image, i) => (

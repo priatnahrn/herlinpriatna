@@ -167,6 +167,25 @@ const PortfolioSection = () => {
       color: "from-orange-500/20",
       bgColor: "bg-orange-500",
     },
+    {
+      id: 9,
+      title: "TOUCHBIZ APP",
+      tags: [
+        { name: "Mobile & Web App", color: "bg-violet-100 text-violet-600" },
+        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
+        { name: "Business Banking", color: "bg-orange-100 text-orange-600" },
+        { name: "Internship", color: "bg-green-100 text-green-600" },
+      ],
+      image: "/assets/touchbiz/touchbiz-cover.png",
+      description:
+        "A mobile game-based application designed for learning and memorizing the Quran using the Maqdis method, featuring interactive audio-tracking tools for efficient memorization, accessible anytime, and affordable for all users.",
+      likes: 95,
+      views: 1220,
+      featured: true,
+      objective: "Project Internship 2024",
+      color: "from-green-500/20",
+      bgColor: "bg-green-500",
+    },
   ];
   return (
     <section className="py-20 bg-gray-50" id="projects">
