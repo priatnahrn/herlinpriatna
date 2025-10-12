@@ -18,130 +18,14 @@ import AboutSection from "../components/AboutSection";
 import PortfolioSection from "../components/PortfolioSection";
 import PortfolioShowcase from "../components/PortfolioShowcase";
 import AchievementSection from "../components/AchievementSection";
+import HeroSection from "../components/HeroSection";
 
 const MainContent = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-pink-50/30">
       <Navbar />
 
-      {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
-          {/* Left Content */}
-          <div className="w-full lg:w-1/2 space-y-6">
-            {/* Main Text */}
-            <div className="flex flex-row gap-4 flex-wrap">
-              {/* Greeting */}
-              <div className="flex items-center gap-2">
-                <span className="px-4 py-2 bg-teal-50 text-teal-500 rounded-full text-sm font-medium inline-flex items-center">
-                  <Sparkles size={16} className="mr-2" />
-                  UI/UX Designer
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="px-4 py-2 bg-orange-50 text-orange-500 rounded-full text-sm font-medium inline-flex items-center">
-                  <Sparkles size={16} className="mr-2" />
-                  Soon to become Web Developer
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="px-4 py-2 bg-rose-50 text-rose-500 rounded-full text-sm font-medium inline-flex items-center">
-                  <Sparkles size={16} className="mr-2" />
-                  Currently learning React JS & Express JS
-                </span>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <p className="text-lg font-semibold text-gray-700 flex items-center gap-2">
-                Hello 👋🏻 I&apos;m
-              </p>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-                Herlin Priatna
-              </h1>
-              <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#EB3748] to-[#e4630d] bg-clip-text text-transparent">
-                UI/UX Designer
-              </h2>
-              <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
-                I transform your ideas into creative and user-centered designs,
-                blending innovation with empathy. Let me help bring your digital
-                product vision to life—trust me to be your dedicated designer.
-              </p>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="px-6 py-3 bg-[#EB3748] text-white rounded-lg hover:bg-[#e4630d] transition-all duration-300 flex items-center justify-center group">
-                Let&apos;s Connect
-                <ChevronRight
-                  size={20}
-                  className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                />
-              </button>
-              <button className="px-6 py-3 border-2 border-gray-900 text-gray-900 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-300 flex items-center justify-center group">
-                <a
-                  href="/path/to/cv-herlin-priatna.pdf"
-                  download
-                  className="flex items-center"
-                >
-                  Download CV
-                  <Download
-                    size={20}
-                    className="ml-2 group-hover:translate-y-1 transition-transform duration-300"
-                  />
-                </a>
-              </button>
-            </div>
-
-            {/* Social Links */}
-            <div className="pt-8">
-              <p className="text-sm text-gray-600 mb-4">Find me on</p>
-              <div className="flex gap-4">
-                {[
-                  {
-                    Icon: Github,
-                    href: "https://github.com/priatnahrn",
-                  },
-                  {
-                    Icon: Linkedin,
-                    href: "https://www.linkedin.com/in/herlin-priatna-952830285/",
-                  },
-                  {
-                    Icon: Instagram,
-                    href: "https://www.instagram.com/priatnahrn__/",
-                  },
-                  {
-                    Icon: Dribbble,
-                    href: "https://dribbble.com/priatnahrn__",
-                  },
-                ].map(({ Icon, href }, index) => (
-                  <a
-                    key={index}
-                    href={href}
-                    target="_blank"
-                    className="w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center text-gray-600 hover:text-[#EB3748] hover:scale-110 transition-all duration-300"
-                  >
-                    <Icon size={20} />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="absolute -inset-4 bg-gradient-to-r  rounded-full blur-3xl" />
-            <div className="relative">
-              <div className="w-full h-full absolute -inset-2 bg-gradient-to-r  rounded-3xl blur-2xl" />
-              <img
-                src="/assets/profile-photo.png"
-                alt="Herlin Priatna"
-                className="relative w-full h-auto  transform hover:scale-[1.02] transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection />
 
       {/* About Section */}
       <AboutSection />
@@ -164,9 +48,7 @@ const MainContent = () => {
           <div className="max-w-4xl mx-auto">
             {[
               {
-                
                 title: "Coming Soon...",
-                
               },
               {
                 year: "Mar – Sep 2025",
