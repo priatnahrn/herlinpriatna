@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
+
 import {
-  Sparkles,
   ChevronRight,
   Download,
   Github,
@@ -24,15 +23,6 @@ const HeroSection = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 space-y-6">
-          {/* Greeting Tag */}
-          <div className="flex flex-row gap-4 flex-wrap">
-            <div className="flex items-center gap-2">
-              <span className="px-4 py-2 bg-teal-50 text-teal-500 rounded-full text-sm font-medium inline-flex items-center">
-                <Sparkles size={16} className="mr-2" />
-                UI/UX Designer
-              </span>
-            </div>
-          </div>
 
           {/* Text Section */}
           <div className="space-y-4">

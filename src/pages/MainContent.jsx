@@ -19,6 +19,7 @@ import PortfolioSection from "../components/PortfolioSection";
 import PortfolioShowcase from "../components/PortfolioShowcase";
 import AchievementSection from "../components/AchievementSection";
 import HeroSection from "../components/HeroSection";
+import CaseStudiesSection from "../components/CaseStudiesSection";
 
 const MainContent = () => {
   return (
@@ -27,11 +28,13 @@ const MainContent = () => {
 
       <HeroSection />
 
+      {/* Portfolio Section */}
+      <PortfolioSection />
+
+      <CaseStudiesSection />
       {/* About Section */}
       <AboutSection />
 
-      {/* Portfolio Section */}
-      <PortfolioSection />
 
       {/* Experience Section */}
       <section className="py-20" id="experience">

@@ -122,15 +122,14 @@ const KasihIbuStudyCase = () => {
               <img
                 src="/assets/kasihibu/kasih-ibu-logo.png"
                 alt="Logo Kasih Ibu"
+                className="h-16 mb-6"
               />
-              <h1 className="text-4xl md:text-5xl lg:text-6xl mt-4 font-bold text-gray-900 mb-6">
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                 Kasih <span className="text-rose-500">Ibu</span>
               </h1>
-              <p className="text-xl text-gray-600 max-w-xl">
-                A mobile app using AI to support pregnant and postpartum mothers
-                in managing their mental health and emotional well-being.
-              </p>
-              <div className="flex gap-3 my-5">
+
+              <div className="flex flex-wrap gap-3 mb-6">
                 <span className="px-4 py-2 bg-rose-50 text-rose-500 rounded-full text-sm font-medium">
                   UI/UX Case Study
                 </span>
@@ -141,7 +140,23 @@ const KasihIbuStudyCase = () => {
                   UX Competition for Gemastik 2024
                 </span>
               </div>
+
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                A mobile app using AI to support pregnant and postpartum mothers
+                in managing their mental health and emotional well-being.
+              </p>
+
+              <a
+                href="https://drive.google.com/file/d/1Nw8HyfOEyRD6Ai7Vt3um7eAo7llqYXeX/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-all hover:shadow-lg font-medium"
+              >
+                <BookOpen className="w-5 h-5" />
+                View Full Case Study
+              </a>
             </div>
+
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-rose-500/5 to-rose-100 rounded-3xl blur-3xl"></div>
               <img

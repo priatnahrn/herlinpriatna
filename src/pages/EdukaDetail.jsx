@@ -115,12 +115,7 @@ const EdukaStudyCase = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl mt-4 font-bold text-gray-900 mb-6">
                 Eduka <span className="text-violet-500">App</span>
               </h1>
-              <p className="text-xl text-gray-600 max-w-xl">
-                An innovative AR-based learning platform designed to boost
-                elementary students motivation and combat learning fatigue
-                through interactive experiences.
-              </p>
-              <div className="flex gap-3 my-5">
+             <div className="flex flex-wrap gap-3 mb-6">
                 <span className="px-4 py-2 bg-violet-50 text-violet-500 rounded-full text-sm font-medium">
                   UI/UX Case Study
                 </span>
@@ -131,7 +126,25 @@ const EdukaStudyCase = () => {
                   Project Competition
                 </span>
               </div>
+
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                An innovative AR-based learning platform designed to boost
+                elementary students motivation and combat learning fatigue
+                through interactive experiences.
+              </p>
+
+              <a
+                href="https://drive.google.com/file/d/1bY2_viy0HsEyhLuDakP8L-hJFVbJ2ASb/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-violet-500 text-white rounded-lg hover:bg-violet-600 transition-all hover:shadow-lg font-medium"
+              >
+                <BookOpen className="w-5 h-5" />
+                View for Detail
+              </a>
             </div>
+
+          
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-violet text-violet-500/5 to-violet-100 rounded-3xl blur-3xl"></div>
               <img

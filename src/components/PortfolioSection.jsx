@@ -1,196 +1,138 @@
-/* eslint-disable no-unused-vars */ import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   ExternalLink,
-  Heart,
-  Eye,
-  ArrowRight,
   ChevronRight,
 } from "lucide-react";
 
 const PortfolioSection = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
   const navigate = useNavigate();
 
   const projects = [
     {
       id: 1,
       title: "Eduka App",
-      tags: [
-        { name: "Mobile App", color: "bg-violet-100 text-violet-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "AR Technology", color: "bg-green-100 text-green-600" },
-        { name: "Education", color: "bg-yellow-100 text-yellow-600" },
-      ],
+      tags: ["Mobile App", "UI Design", "AR Technology", "Education"],
       image: "/assets/eduka-app.png",
       description:
         "An innovative AR-based learning platform designed to boost elementary students motivation and combat learning fatigue through interactive experiences.",
-      likes: 128,
-      views: 1840,
       path: "/portfolio/eduka",
       featured: true,
       objective: "1st Winner Primakara UI/UX Design Competition 2024",
-      color: "from-purple-500/20",
       bgColor: "bg-violet-500",
+      hasDetailPage: true,
     },
     {
       id: 2,
       title: "Kasih Ibu App",
-      tags: [
-        { name: "Mobile App", color: "bg-violet-100 text-violet-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Healthcare", color: "bg-pink-100 text-pink-600" },
-        { name: "AI Integration", color: "bg-yellow-100 text-yellow-600" },
-      ],
+      tags: ["Mobile App", "UI Design", "Healthcare", "AI Integration"],
       image: "/assets/kasih-ibu-mockup.png",
       description:
         "A mobile app using AI to support pregnant and postpartum mothers in managing their mental health and emotional well-being.",
-      likes: 95,
-      views: 1220,
       path: "/portfolio/kasihibu",
       featured: true,
       objective: "2nd Winner UI/UX Design Competition 2024 at UMY",
-      color: "from-pink-500/20",
-      bgColor: "bg-pink-500",
+      bgColor: "bg-rose-500",
+      hasDetailPage: true,
     },
     {
       id: 3,
-      title: "Maqdis Academy",
-      tags: [
-        { name: "Web App", color: "bg-indigo-100 text-indigo-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Education", color: "bg-yellow-100 text-yellow-600" },
-        { name: "E-Learning", color: "bg-green-100 text-green-600" },
-      ],
-      image: "/assets/maqdis.png",
+      title: "SMBC TOUCHBIZ APP",
+      tags: ["Mobile & Web App", "UI Design", "Business Banking", "Fintech"],
+      image: "/assets/touchbiz/touchbiz-cover.png",
       description:
-        "Maqdis Academy is a platform that provides access to project-based learning and internships for students to improve their skills in technology.",
-      likes: 156,
-      views: 2100,
+        "A comprehensive business banking solution designed for Touchbiz, streamlining financial operations, payment processing, and account management for corporate clients.",
       featured: true,
-      objective: "Project Internship 2024",
-      color: "from-blue-500/20",
-      bgColor: "bg-blue-500",
+      objective: "Internship Project 2025",
+      bgColor: "bg-blue-600",
+      externalLink: "https://drive.google.com/file/d/1lDgHFd-IwNyy-hHa8lVefi9fNJlCgle4/view?usp=sharing",
+      hasDetailPage: false,
     },
     {
       id: 4,
-      title: "FitWell",
-      tags: [
-        { name: "Mobile App", color: "bg-violet-100 text-violet-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Healthcare", color: "bg-pink-100 text-pink-600" },
-        { name: "AI Integration", color: "bg-yellow-100 text-yellow-600" },
-      ],
+      title: "FitWell App",
+      tags: ["Mobile App", "UI Design", "Healthcare", "AI Integration"],
       image: "/assets/fitwell/fitwell-cover.png",
       description:
         "FitWell is a nutrition-focused app powered by AI that offers personalized meal plans, nutritionist consultations, and a product scanner to help users prevent and manage obesity.",
-      likes: 95,
-      views: 1220,
       featured: true,
       objective: "Project Competition 2023",
-      color: "from-orange-500/20",
       bgColor: "bg-orange-500",
+      externalLink: "https://drive.google.com/file/d/1p0AiD8jHDDNXJ5iILc6qkcC1hYsS0n2M/view?usp=sharing",
+      hasDetailPage: false,
     },
     {
       id: 5,
       title: "Hamim App",
-      tags: [
-        { name: "Mobile App", color: "bg-violet-100 text-violet-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Education", color: "bg-yellow-100 text-yellow-600" },
-        { name: "Islamic App", color: "bg-green-100 text-green-600" },
-      ],
+      tags: ["Mobile App", "UI Design", "Education", "Islamic App"],
       image: "/assets/hamim/hamim-cover.png",
       description:
-        "A mobile application for learning and memorizing the Quran using the Maqdis method, which provides excellent features in tracking audio-based memorization that is affordable and easily accessible.",
-      likes: 95,
-      views: 1220,
+        "A mobile application for learning and memorizing the Quran using the Maqdis method, featuring excellent audio-based memorization tracking that is affordable and easily accessible.",
       featured: true,
-      objective: "Project Internship 2024",
-      color: "from-orange-500/20",
-      bgColor: "bg-orange-500",
+      objective: "Internship Project 2024",
+      bgColor: "bg-green-600",
+      externalLink: "https://play.google.com/store/apps/details?id=co.metode.hamim&hl=id&pli=1",
+      hasDetailPage: false,
     },
     {
       id: 6,
-      title: "ERP Kawan Kerja",
-      tags: [
-        { name: "Web App", color: "bg-indigo-100 text-indigo-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Enterprise", color: "bg-cyan-100 text-cyan-600" },
-        { name: "Dashboard", color: "bg-purple-100 text-purple-600" },
-      ],
+      title: "Maqdis Academy",
+      tags: ["Web App", "UI Design", "Education", "E-Learning"],
+      image: "/assets/maqdis.png",
       description:
-        "ERP Kawan Kerja is an integrated application designed to optimize business operations by streamlining processes such as finance, HR, inventory, and project management, providing businesses with efficient and data-driven solutions.",
-      image: "/assets/kawankerja/erp-cover.png",
-      likes: 95,
-      views: 1220,
+        "Maqdis Academy is a platform that provides access to project-based learning and internships for students to improve their skills in technology.",
       featured: true,
-      objective: "Project Internship 2024",
-      color: "from-cyan-500/20",
-      bgColor: "bg-cyan-500",
+      objective: "Internship Project 2024",
+      bgColor: "bg-blue-500",
+      externalLink: "https://academy.maqdis.com",
+      hasDetailPage: false,
     },
     {
       id: 7,
-      title: "Content & User Management of Maqdis Travel App",
-      tags: [
-        { name: "Web App", color: "bg-indigo-100 text-indigo-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Dashboard", color: "bg-purple-100 text-purple-600" },
-        { name: "Travel", color: "bg-yellow-100 text-yellow-600" },
-      ],
+      title: "ERP Kawan Kerja",
+      tags: ["Web App", "UI Design", "Enterprise", "Dashboard"],
       description:
-        "A platform tailored for halal and religious travel, enabling administrators to manage travel content, user interactions, and bookings efficiently while ensuring a seamless and spiritually enriching experience for travelers.",
-      image: "/assets/maqdis/travel-cover.png",
-      likes: 95,
-      views: 1220,
+        "ERP Kawan Kerja is an integrated application designed to optimize business operations by streamlining processes such as finance, HR, inventory, and project management.",
+      image: "/assets/kawankerja/erp-cover.png",
       featured: true,
-      objective: "Project Internship 2024",
-      color: "from-yellow-500/20",
-      bgColor: "bg-yellow-500",
+      objective: "Internship Project 2024",
+      bgColor: "bg-cyan-600",
+      externalLink: "https://erp.kawankerja.id",
+      hasDetailPage: false,
     },
     {
       id: 8,
-      title: "Hamim App Based Game",
-      tags: [
-        { name: "Mobile App", color: "bg-violet-100 text-violet-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Game", color: "bg-orange-100 text-orange-600" },
-        { name: "Islamic App", color: "bg-green-100 text-green-600" },
-      ],
-      image: "/assets/maqdis/hamim-game-cover.png",
+      title: "Maqdis Travel Management",
+      tags: ["Web App", "UI Design", "Dashboard", "Travel"],
       description:
-        "A mobile game-based application designed for learning and memorizing the Quran using the Maqdis method, featuring interactive audio-tracking tools for efficient memorization, accessible anytime, and affordable for all users.",
-      likes: 95,
-      views: 1220,
+        "A platform tailored for halal and religious travel, enabling administrators to manage travel content, user interactions, and bookings efficiently.",
+      image: "/assets/maqdis/travel-cover.png",
       featured: true,
-      objective: "Project Internship 2024",
-      color: "from-orange-500/20",
-      bgColor: "bg-orange-500",
+      objective: "Internship Project 2024",
+      bgColor: "bg-amber-600",
+      externalLink: "https://travel.maqdis.com",
+      hasDetailPage: false,
     },
     {
       id: 9,
-      title: "TOUCHBIZ APP",
-      tags: [
-        { name: "Mobile & Web App", color: "bg-violet-100 text-violet-600" },
-        { name: "UI Design", color: "bg-blue-100 text-blue-600" },
-        { name: "Business Banking", color: "bg-orange-100 text-orange-600" },
-        { name: "Internship", color: "bg-green-100 text-green-600" },
-      ],
-      image: "/assets/touchbiz/touchbiz-cover.png",
+      title: "Hamim Game App",
+      tags: ["Mobile App", "UI Design", "Game", "Islamic App"],
+      image: "/assets/maqdis/hamim-game-cover.png",
       description:
-        "A mobile game-based application designed for learning and memorizing the Quran using the Maqdis method, featuring interactive audio-tracking tools for efficient memorization, accessible anytime, and affordable for all users.",
-      likes: 95,
-      views: 1220,
+        "A mobile game-based application for learning and memorizing the Quran using the Maqdis method, featuring interactive audio-tracking tools for efficient memorization.",
       featured: true,
-      objective: "Project Internship 2024",
-      color: "from-green-500/20",
-      bgColor: "bg-green-500",
+      objective: "Internship Project 2024",
+      bgColor: "bg-emerald-600",
+      externalLink: "https://play.google.com/store/apps/hamim-game",
+      hasDetailPage: false,
     },
   ];
+
   return (
-    <section className="py-20 bg-gray-50" id="projects">
+    <section className="py-20 bg-white" id="projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header stays the same */}
+        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-[#EB3748] font-medium text-sm tracking-wider uppercase">
             Portfolio
@@ -199,112 +141,80 @@ const PortfolioSection = () => {
             Featured Projects
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Showcasing some of my best work in UI/UX design. Each project
-            represents a unique challenge and creative solution.
+            Showcasing my work in UI/UX design across various industries and platforms
           </p>
         </div>
 
-        {/* Filter Buttons stay the same */}
-        {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {filters.map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(filter)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === filter
-                  ? "bg-[#EB3748] text-white"
-                  : "bg-white text-gray-700 hover:bg-[#EB3748] hover:text-white"
-              }`}
-            >
-              {filter}
-            </button>
-          ))}
-        </div> */}
-
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer flex flex-col"
+              className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 transition-all duration-300"
             >
               {/* Project Image */}
-              <div className="relative overflow-hidden">
-                <div
-                  className={`absolute inset-0 bg-gradient-to-t ${project.color} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end`}
-                >
-                  <div className="p-6 w-full">
-                    <div className="flex justify-between items-center text-white">
-                      <div className="flex items-center gap-4">
-                        <span className="flex items-center gap-1">
-                          <Heart size={16} />
-                          {project.likes}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <Eye size={16} />
-                          {project.views}
-                        </span>
-                      </div>
-                      <ExternalLink size={16} className="text-white" />
-                    </div>
-                  </div>
-                </div>
+              <div className="relative overflow-hidden aspect-video">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                {project.featured && (
-                  <span
-                    className={`absolute top-4 left-4 px-3 py-1 ${project.bgColor} text-white text-xs font-medium rounded-full`}
-                  >
-                    {project.objective}
-                  </span>
-                )}
+                <span
+                  className={`absolute top-3 right-3 px-3 py-1 ${project.bgColor} text-white text-xs font-medium rounded-full`}
+                >
+                  {project.objective}
+                </span>
               </div>
 
               {/* Project Info */}
-              <div className="p-6 flex-grow">
+              <div className="p-5">
                 <div className="flex flex-wrap gap-2 mb-3">
-                  {project.tags &&
-                    project.tags.map((tag, index) => (
-                      <span
-                        key={index}
-                        className={`px-3 py-1 rounded-full text-xs font-medium ${tag.color}`}
-                      >
-                        {tag.name}
-                      </span>
-                    ))}
+                  {project.tags.slice(0, 2).map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                  {project.tags.length > 2 && (
+                    <span className="px-2.5 py-1 bg-gray-100 text-gray-700 rounded text-xs font-medium">
+                      +{project.tags.length - 2}
+                    </span>
+                  )}
                 </div>
-                <h3 className="mt-2 text-xl font-bold text-gray-900">
+                
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-gray-600 text-sm">
+                
+                <p className="text-gray-600 text-sm line-clamp-2 mb-4">
                   {project.description}
                 </p>
-              </div>
 
-              {/* Simplified Case Study Button */}
-              {project.path && (
-                <div className="px-6 pb-6">
+                {/* Action Button */}
+                {project.hasDetailPage ? (
                   <button
                     onClick={() => navigate(project.path)}
-                    className={`w-full ${project.bgColor} text-white rounded-lg px-4 py-2 flex items-center justify-between`}
+                    className={`w-full flex items-center justify-between px-4 py-2.5 ${project.bgColor} text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium`}
                   >
-                    <span className="font-medium">Read the Case Study</span>
-                    <ChevronRight />
+                    <span>Read Case Study</span>
+                    <ChevronRight className="w-4 h-4" />
                   </button>
-                </div>
-              )}
+                ) : (
+                  <a
+                    href={project.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full flex items-center justify-between px-4 py-2.5 ${project.bgColor} text-white rounded-lg hover:opacity-90 transition-opacity text-sm font-medium`}
+                  >
+                    <span>View Project</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                )}
+              </div>
             </div>
           ))}
-        </div>
-
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center gap-2 px-8 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 group">
-            More Projects Coming Soon in 2025
-          </button>
         </div>
       </div>
     </section>
